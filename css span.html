@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .item1{
+        grid-area:my;
+    }
+    
+    .self-container{
+        display: grid;
+        background-color: blue;
+        padding: 10px;
+        grid-template-areas: 'my my my my my' ;
+        gap: 10px;
+    }
+    .self-container> div{
+        background-color: aliceblue;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+</style>
+</head>
+<body>
+    <div class="self-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+</body>
+</html>
